@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "SideSage",
   "description": "AI assistant in Chrome's side panel — ask, translate, summarize, rewrite any selected text.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
