@@ -1,0 +1,32 @@
+{
+  "name": "sidesage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "package:chrome": "bash scripts/package-extension.sh",
+    "server": "tsx server/index.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "lucide-react": "^0.511.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "vite": "^6.3.5"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.318",
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.5",
+    "@types/react-dom": "^19.1.5",
+    "sharp": "^0.34.5",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
