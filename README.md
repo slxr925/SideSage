@@ -1,5 +1,11 @@
 # SideSage
 
+**[English](#english) · [中文](#中文)**
+
+---
+
+<a id="中文"></a>
+
 一个 Chrome 浏览器扩展，在任何网页上选中文字后，通过悬浮按钮快速调用 AI 进行提问、翻译、总结、解释和改写。同时在右侧边栏提供完整的 AI 对话功能，支持附加当前网页内容作为上下文。
 
 ## 功能
@@ -16,12 +22,10 @@
 
 ## 安装
 
-SideSage 已在 Chrome 应用商店上线，推荐直接安装：
+SideSage 已在 Chrome 应用商店上线，欢迎安装使用！
 
-1. 访问 [Chrome Web Store - SideSage](https://chromewebstore.google.com/detail/sidesage) 点击 **添加至 Chrome**
-2. 安装完成后，工具栏出现 SideSage 图标，点击即可打开右侧边栏
-
-**手动安装（开发者模式）：** 从 [Releases](https://github.com/slxr925/SideSage/releases) 下载最新版 zip，解压后在 `chrome://extensions/` 中开启开发者模式，点击「加载已解压的扩展程序」选择解压目录即可。
+1. 访问 [Chrome Web Store](https://chromewebstore.google.com) 搜索 **SideSage**，点击 **添加至 Chrome**
+2. 安装完成后，工具栏出现 SideSage 图标，即可使用。
 
 ## 配置
 
@@ -56,3 +60,62 @@ SideSage 已在 Chrome 应用商店上线，推荐直接安装：
 ### 右键菜单
 
 选中文字后右键，选择 SideSage 的对应操作。
+
+---
+
+<a id="english"></a>
+
+A Chrome extension that lets you select any text on a webpage and instantly ask, translate, summarize, explain, or rewrite it with AI — via a floating toolbar, right-click menu, or a full side panel conversation with page context support.
+
+## Features
+
+- **Floating Toolbar** — Appears on text selection with Ask, Translate, Summarize, and Rewrite actions
+- **Side Panel Chat** — Full AI conversation interface with streaming responses and Markdown rendering
+- **Attach Page** — One-click to attach current page content as context for AI responses
+- **Context Menu** — Right-click selected text to Ask, Summarize, Translate, Explain, or Rewrite
+- **Rewrite** — Opens a rewrite panel in editable fields with direction presets (clearer, shorter, professional, friendlier) and iterative refinement
+- **Bilingual UI** — Switch between English and Chinese in settings
+- **Dark Mode** — Automatically follows your system theme
+- **Direct API Connection** — Calls any OpenAI-compatible API directly, no server needed
+- **Privacy First** — No conversation logging; API key stored locally, never uploaded
+
+## Installation
+
+SideSage is now available on the Chrome Web Store!
+
+1. Visit [Chrome Web Store](https://chromewebstore.google.com) and search for **SideSage**, then click **Add to Chrome**
+2. Once installed, the SideSage icon appears in your toolbar — click it to get started.
+
+## Configuration
+
+Open the side panel and click the settings icon (gear). Fill in:
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Language | UI display language | English |
+| API Key | Your AI service API key | - |
+| Provider Base URL | AI provider API endpoint | `https://api.openai.com/v1` |
+| Model | Model name | `gpt-4.1-mini` |
+
+Works with any OpenAI-compatible API provider (DeepSeek, Groq, SiliconFlow, etc.) — just change the Provider Base URL to the corresponding endpoint.
+
+## Usage
+
+### After Selecting Text
+
+An orange floating toolbar appears with four actions:
+
+- **Ask** — Opens a dialog where you type a question and AI answers based on the selected text
+- **Translate** — Auto-translates (Chinese ↔ English, other languages to English)
+- **Summarize** — Generates a concise summary of the selected text
+- **Rewrite** — Opens a rewrite panel with direction presets (clearer / shorter / professional / friendlier), supports iterative refinement
+
+### Side Panel
+
+- Type a question and press Enter or click Send to chat with AI
+- Click the paperclip button to attach the current page content as context
+- Click `+` to start a new conversation
+
+### Context Menu
+
+Select text, right-click, and choose a SideSage action.
