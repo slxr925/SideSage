@@ -16,11 +16,12 @@
 
 ## 安装
 
-1. 将 `sidesage.zip` 解压到任意文件夹
-2. Chrome 地址栏输入 `chrome://extensions/`
-3. 右上角打开「开发者模式」
-4. 点击「加载已解压的扩展程序」，选择解压后的文件夹
-5. 扩展图标出现在工具栏，点击即可打开右侧边栏
+SideSage 已在 Chrome 应用商店上线，推荐直接安装：
+
+1. 访问 [Chrome Web Store - SideSage](https://chromewebstore.google.com/detail/sidesage) 点击 **添加至 Chrome**
+2. 安装完成后，工具栏出现 SideSage 图标，点击即可打开右侧边栏
+
+**手动安装（开发者模式）：** 从 [Releases](https://github.com/slxr925/SideSage/releases) 下载最新版 zip，解压后在 `chrome://extensions/` 中开启开发者模式，点击「加载已解压的扩展程序」选择解压目录即可。
 
 ## 配置
 
