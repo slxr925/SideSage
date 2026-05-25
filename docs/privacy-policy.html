@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SideSage Privacy Policy</title>
+  <style>
+    body {
+      color: #1f2937;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      line-height: 1.7;
+      margin: 0 auto;
+      max-width: 760px;
+      padding: 40px 24px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin: 0 0 8px;
+    }
+
+    h2 {
+      color: #c2410c;
+      font-size: 20px;
+      margin-top: 32px;
+    }
+
+    .updated {
+      color: #6b7280;
+      margin-bottom: 32px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    code {
+      background: #f3f4f6;
+      border-radius: 4px;
+      padding: 1px 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>SideSage Privacy Policy</h1>
+  <p class="updated">Last updated: May 25, 2026</p>
+
+  <h2>Overview</h2>
+  <p>SideSage is a Chrome extension that lets users ask, translate, summarize, explain, and rewrite webpage text with an AI provider selected by the user. This policy explains what data the extension handles and how it is used.</p>
+
+  <h2>Data We Collect</h2>
+  <p><strong>SideSage does not collect, sell, or share user data with the developer.</strong> We do not operate analytics, advertising, tracking, or remote logging services for the extension.</p>
+
+  <h2>Data Handled By The Extension</h2>
+  <p>The extension may process the following data locally in Chrome so that requested features can work:</p>
+  <ul>
+    <li><strong>Selected text</strong>: text selected by the user on a webpage, used for ask, translate, summarize, explain, and rewrite actions.</li>
+    <li><strong>Page content</strong>: visible page text when the user chooses the Attach Page feature.</li>
+    <li><strong>Page metadata</strong>: page title and URL, used to provide context for AI responses.</li>
+    <li><strong>User prompts and AI responses</strong>: messages typed by the user and responses returned by the configured AI provider.</li>
+    <li><strong>Settings</strong>: API key, provider base URL, model name, and language preference.</li>
+  </ul>
+
+  <h2>Local Storage</h2>
+  <ul>
+    <li>The API key, provider base URL, model name, and language preference are stored locally in Chrome using <code>chrome.storage.local</code>.</li>
+    <li>Conversation content is kept only in extension memory for the current session. It is not persisted by SideSage after the conversation is cleared or the extension session ends.</li>
+    <li>SideSage does not send these settings or conversation history to any server controlled by the developer.</li>
+  </ul>
+
+  <h2>Third-Party AI Providers</h2>
+  <p>When the user sends a request, SideSage transmits the prompt, selected text, optional page content, page title, page URL, and the user's API key directly from the browser to the AI provider configured by the user. The default provider URL is OpenAI's API endpoint, and users may configure any OpenAI-compatible provider.</p>
+  <p>Data sent to a third-party AI provider is governed by that provider's terms and privacy policy. For OpenAI, see <a href="https://openai.com/privacy" target="_blank" rel="noopener noreferrer">OpenAI Privacy Policy</a>.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>sidePanel</strong>: opens the extension interface in Chrome's side panel.</li>
+    <li><strong>contextMenus</strong>: adds right-click actions for selected text.</li>
+    <li><strong>storage</strong>: stores settings locally in Chrome.</li>
+    <li><strong>activeTab</strong>: accesses the active tab when the user invokes an extension action.</li>
+    <li><strong>scripting</strong>: reads page text only when the user attaches the current page as context.</li>
+    <li><strong>&lt;all_urls&gt;</strong>: allows the floating toolbar and selection features to work on webpages where the user selects text.</li>
+  </ul>
+
+  <h2>Data Sale And Advertising</h2>
+  <p>SideSage does not sell user data, use user data for advertising, or transfer user data for creditworthiness or lending purposes.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>SideSage is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this privacy policy from time to time. Updates will be posted on this page with a revised date.</p>
+
+  <h2>Contact</h2>
+  <p>For questions about this policy, open an issue at <a href="https://github.com/slxr925/SideSage/issues" target="_blank" rel="noopener noreferrer">github.com/slxr925/SideSage/issues</a>.</p>
+</body>
+</html>
